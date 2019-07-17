@@ -1,0 +1,56 @@
+@import 'variables';
+@import 'mixins';
+@import 'menu';
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.footer-navigation{
+    padding-top: 20px;
+    color: #9a9a9a;
+    font-family: $SecondaryFont;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 48px;
+    text-transform: uppercase;
+
+    &-list{
+        list-style: none;
+        display: flex;
+    }
+
+    &-item{
+        text-decoration: none;
+
+        &:not(:last-child){
+            padding-right: 20px;
+        }
+    }
+}
+
+.socialContacts{
+    padding-bottom: 50px;
+    text-align: right;
+}
+
+.socialContacts a:not(:last-child){
+    margin-right: 20px;
+}
+.footer-wraper{
+    margin-right: 30px;
+}
+
+.legal{
+    padding-bottom: 20px;
+    padding-top: 30px;
+    color: #9a9a9a;
+    font-family: $SecondaryFont;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 48px;
+    text-transform: uppercase;
+}

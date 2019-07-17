@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap');
+
+@import '../../clear.scss';
+@import '../../footer';
+@import '../../form';
+@import '../../variables.scss';
+@import '../../menu';
+@import '../../mixins';
+
+.about-us{
+    position: relative;
+    padding-bottom: 135px;
+}
+
+.about-us::before{
+    content: '';
+    background: url(../img/backgroundAboutUs.png) no-repeat;
+    background-size: cover;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.headline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+
+    h3{
+        color: $TextMainColor;
+        font-family: $MainFont;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 48px;
+        text-transform: uppercase;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin: 0;
+        
+    }
+
+    a{
+        text-decoration: none;
+        color: $TextMainColor;
+        font-family: $MainFont;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 48px;
+        text-transform: uppercase;
+        
+    }
+}

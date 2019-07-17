@@ -1,0 +1,16 @@
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    color: $TextMainColor;
+    font-family: $MainFont;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+
+    button{
+        border: none;
+        background-color: rgba(238, 238, 238, 0.5);
+    }
+}

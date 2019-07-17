@@ -1,0 +1,38 @@
+@import 'variables';
+@mixin titlesh2 {
+    color: $TextMainColor;
+    font-family: $MainFont;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+@mixin titlesh3 {
+    color: $TextMainColor;
+    font-family: $MainFont;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+@mixin PrimaryParagraf {
+    color: $TextMainColor;
+    font-family: $SecondaryFont;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+@mixin TitleBackground {
+    h2::before{
+        content: '';
+        background: $MainColor;
+        display: block;
+        width: 67px;
+        height: 21px;
+        position: absolute;
+        z-index: -1;
+        bottom: 4px;
+    
+    }
+}
